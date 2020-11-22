@@ -27,7 +27,6 @@ export const AppProvider: FC<ReactNode> = ({ children }) => {
       const res = await fetch(
         'https://ron-swanson-quotes.herokuapp.com/v2/quotes'
       );
-      console.log(res);
       const [data] = await res.json();
       dispatch({
         type: 'SET_RANDOM_QUOTE',
