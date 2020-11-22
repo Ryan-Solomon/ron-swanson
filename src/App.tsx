@@ -1,12 +1,10 @@
 import React from 'react';
-import { RandomQuotePage, SearchQuotePage, AllQuotesPage } from './pages';
+import { RandomQuotePage } from './pages';
 
 function App() {
   return (
     <>
       <RandomQuotePage />
-      <SearchQuotePage />
-      <AllQuotesPage />
     </>
   );
 }
