@@ -9,8 +9,8 @@ const RandomQuote = () => {
   return (
     <main className='fetch-random-container'>
       <section className='search-random-quote'>
-        <div className='h1'>Fetch a Ron Swanson Quote!</div>
-        <button onClick={fetchRandomSwansonQuote}>Get Quote</button>
+        <h1>What will Ron say next?</h1>
+        <button onClick={fetchRandomSwansonQuote}>Find Out Here</button>
         {randomSwansonQuote && <h4>"{randomSwansonQuote}"</h4>}
       </section>
     </main>
