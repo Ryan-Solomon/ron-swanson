@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAppContext } from './../../context/appContext';
+import './RandomQuote.styles.scss';
 
 const RandomQuote = () => {
   const { fetchRandomSwansonQuote, randomSwansonQuote } = useAppContext();
@@ -7,9 +8,11 @@ const RandomQuote = () => {
 
   return (
     <main className='fetch-random-container'>
-      <div className='h1'>Fetch a Ron Swanson Quote!</div>
-      <button onClick={fetchRandomSwansonQuote}>Get Quote</button>
-      {randomSwansonQuote && <h4>{randomSwansonQuote}</h4>}
+      <section className='search-random-quote'>
+        <h1>What will Ron say next?</h1>
+        <button onClick={fetchRandomSwansonQuote}>Find Out Here</button>
+        {randomSwansonQuote && <h4>"{randomSwansonQuote}"</h4>}
+      </section>
     </main>
   );
 };
