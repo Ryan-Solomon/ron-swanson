@@ -1,0 +1,20 @@
+.fetch-random-container {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(245, 246, 252, 0),
+      rgb(0, 0, 0)
+    ),
+    url('../../img/randomQuoteBg.png');
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.search-random-quote {
+  height: 20vh;
+  width: 30vw;
+  position: absolute;
+  top: 10rem;
+  right: 16rem;
+}
