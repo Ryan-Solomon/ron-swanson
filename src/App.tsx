@@ -1,7 +1,14 @@
 import React from 'react';
+import { RandomQuotePage, SearchQuotePage, AllQuotesPage } from './pages';
 
 function App() {
-  return <div>Yo</div>;
+  return (
+    <>
+      <RandomQuotePage />
+      <SearchQuotePage />
+      <AllQuotesPage />
+    </>
+  );
 }
 
 export default App;
