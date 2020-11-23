@@ -12,6 +12,12 @@ export const reducer = (
         randomSwansonQuote: action.payload,
         status: 'idle',
       };
+    case 'SET_ALL_QUOTES':
+      return {
+        ...state,
+        allSwansonQuotes: action.payload,
+        status: 'idle',
+      };
     case 'SET_LOADING':
       return {
         ...state,
