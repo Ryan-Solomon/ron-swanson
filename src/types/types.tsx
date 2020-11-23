@@ -1,6 +1,5 @@
 export interface InitialContext {
   fetchRandomSwansonQuote: () => void;
-  fetchAllSwansonQuotes: (amount: number) => void;
   randomSwansonQuote: string;
   allSwansonQuotes: string[];
   status: 'loading' | 'error' | 'idle';

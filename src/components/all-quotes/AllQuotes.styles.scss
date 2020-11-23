@@ -1,0 +1,27 @@
+.all-quotes .buttons {
+  margin: 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    padding: 0.4rem;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: white;
+      color: black;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+  }
+}
+
+.quotes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 2rem;
+  margin: 3rem 3rem;
+}
